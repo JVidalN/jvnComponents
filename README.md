@@ -82,7 +82,7 @@ Add the following references for the proper functioning of the directives:
 
 ## Demo JvnComponentes
 
-<a href="ehttps://rawgit.com/LegolasDBA/jvnComponents/master/index.html" target="_blank">App Demo</a>
+<a href="https://rawgit.com/LegolasDBA/jvnComponents/master/index.html" target="_blank">App Demo</a>
 
 ## License
 

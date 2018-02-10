@@ -80,7 +80,7 @@ Adicionar as seguintes referências para o bom funcionamento das diretivas:
 
 ## Demo JvnComponentes
 
-<a href="ehttps://rawgit.com/LegolasDBA/jvnComponents/master/index.html" target="_blank">App Demo</a>
+<a href="https://rawgit.com/LegolasDBA/jvnComponents/master/index.html" target="_blank">App Demo</a>
 
 ## Licença
 
