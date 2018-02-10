@@ -17,7 +17,7 @@ All references are described below.
 
 1. jvnControleAcesso
 
-	Directive based on this [Diretiva para Controle de Acesso](http://gabrielfeitosa.com/angularjs-diretiva-para-controle-de-acesso/).
+	Directive based on this [Access Control Directive](http://gabrielfeitosa.com/angularjs-diretiva-para-controle-de-acesso/).
 
 2. jvnDataTable
 
