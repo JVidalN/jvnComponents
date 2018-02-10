@@ -22,13 +22,13 @@ Todas as referências estão descritas abaixo.
 
 	Diretiva criada com base nos seguintes itens:
 
-	* [responsive-md-data-table](https://github.com/paghdalyogesh/responsive-md-data-table)
-	* [export data](http://jsfiddle.net/TheSharpieOne/XNVj3/1/)
-	* [export to pdf](http://pdfmake.org/#/gettingstarted)
+	* [Responsive Data Table](https://github.com/paghdalyogesh/responsive-md-data-table)
+	* [Export Data](http://jsfiddle.net/TheSharpieOne/XNVj3/1/)
+	* [Export To PDF](http://pdfmake.org/#/gettingstarted)
 
 3. **jvnDualList**
 
-	Diretiva criada com base nessa [ng-duallist](https://github.com/tushariscoolster/ng-duallist).
+	Diretiva criada com base nessa [Dual List](https://github.com/tushariscoolster/ng-duallist).
 
 4. **jvnInputFile**
 
@@ -36,7 +36,7 @@ Todas as referências estão descritas abaixo.
 
 5. **jvnLoader**
 
-	Diretiva craida com base na ideia da forma de utilização de meu amigo [Tiago Carmo](https://github.com/tiagocarmosantos/)
+	Diretiva criada com base na ideia da forma de utilização de meu [amigo](https://github.com/tiagocarmosantos/)
 
 6. **jvnMenu**
 

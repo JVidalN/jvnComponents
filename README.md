@@ -4,7 +4,6 @@
 
 # jvnComponents
 
-Personal project of directives with AngularJS, using Angular Material, to facilitate the development of apps.
 Personal project of directives with AngularJS using the Angular Material and Material Icons, to facilitate the development of apps.
 
 Some of these components were created based on already existing components, however, controls and functionalities were included that I found pertinent to facilitate the use, besides using the Angular Material and Material Icons.
@@ -23,13 +22,13 @@ All references are described below.
 
 	Directive created based on the following items:
 
-	* [responsive-md-data-table](https://github.com/paghdalyogesh/responsive-md-data-table)
-	* [export data](http://jsfiddle.net/TheSharpieOne/XNVj3/1/)
-	* [export to pdf](http://pdfmake.org/#/gettingstarted)
+	* [Responsive Data Table](https://github.com/paghdalyogesh/responsive-md-data-table)
+	* [Export Data](http://jsfiddle.net/TheSharpieOne/XNVj3/1/)
+	* [Export To PDF](http://pdfmake.org/#/gettingstarted)
 
 3. **jvnDualList**
 
-	Directive based on this [ng-duallist](https://github.com/tushariscoolster/ng-duallist).
+	Directive based on this [Dual List](https://github.com/tushariscoolster/ng-duallist).
 
 4. **jvnInputFile**
 
@@ -37,7 +36,7 @@ All references are described below.
 
 5. **jvnLoader**
 
-	Directive based on the idea of ​​how to use my friend [Tiago Carmo](https://github.com/tiagocarmosantos/)
+	Directive based on the idea of ​​how to use my [friend](https://github.com/tiagocarmosantos/)
 
 6. **jvnMenu**
 
