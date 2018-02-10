@@ -1,0 +1,1 @@
+var jvnApp = angular.module("jvnComponents", ["md.data.table"]);

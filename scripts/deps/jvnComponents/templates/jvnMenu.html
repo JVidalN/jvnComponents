@@ -1,0 +1,35 @@
+<md-content class="main-ctr md-padding"> 
+	<div class="order" style="font-size: 80%;" align="center">
+		<span>Ordenar:</span> <span style="font-size: 85%;"><a ng-class="{'negrito':ordenacaoPadrao}" href="" ng-click="ordenar(true)">Padrão</a> | <a ng-class="{'negrito':!ordenacaoPadrao}" href="" ng-click="ordenar(false)">Alfabeticamente</a></span>
+	</div>
+	<div ng-show="mainMenu" class="mainmenu"> 
+		<md-list> 
+			<md-divider />
+			<md-list-item ng-repeat="menu in dataMenu" ng-if="menu.pai == 0" ng-href="{{menu.link ? menu.link:''}}" ng-click="ifClickMenu(menu)"> 
+				<md-icon>{{menu.icon}}</md-icon> 
+				<p class="md-body-2 side-nav-item">{{menu.descricao}}</p> 
+				<md-button ng-if="!menu.link" class="md-secondary md-icon-button" ng-click="nav(menu.id)"> 
+					<md-icon>chevron_right</md-icon> 
+				</md-button> 
+			</md-list-item>
+		</md-list> 
+		<md-divider />
+	</div> 
+	<div ng-if="menu.pai == 0 && !menu.link" ng-repeat="menu in dataMenu"> 
+		<div ng-show="showsubmenu(menu.id)" ng-class="{donotshow:donotshow, submenu: true}"> 
+			<md-list> 
+				<md-divider /> 
+				<md-list-item ng-click="nav(true)"> 
+					<md-icon ng-click="nav(true)">chevron_left</md-icon> 
+						<p class="md-body-2 side-nav-item">Voltar</p> 
+				</md-list-item> 
+				<md-divider /> 
+				<md-list-item ng-if="submenu.pai == menu.id" href="{{submenu.link}}" ng-repeat="submenu in dataMenu" ng-click="toggleLeft()"> 
+					<md-icon>{{submenu.icon}}</md-icon> 
+					<p class="md-body-2 side-nav-item">{{submenu.descricao}}</p> 
+				</md-list-item> 
+				<md-divider />
+			</md-list> 
+		</div> 
+	</div> 
+</md-content>

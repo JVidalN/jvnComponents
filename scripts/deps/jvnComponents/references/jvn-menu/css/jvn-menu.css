@@ -1,0 +1,57 @@
+.negrito {
+    font-weight: bold;
+}
+
+.submenu.ng-hide,
+.mainmenu.ng-hide{
+    display: block !important;
+ }
+
+.submenu.ng-hide {
+    left:320px;
+}
+
+.donotshow {
+    opacity: 0;
+}
+.submenu {
+    position: absolute;
+    opacity: 1;
+    transition: left .35s linear;
+}
+.mainmenu{
+    position: absolute;
+    opacity: 1;
+    transition: all .35s linear;
+ }
+ 
+ .submenu {
+    left:0px;
+    width: 100%;
+ }
+ 
+ .mainmenu {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+ }
+
+.mainmenu.ng-hide {
+    left:-320px;
+ }
+
+ .main-ctr {
+    position:relative;
+    overflow:hidden;
+    height:100%;
+ } 
+
+div.order a {
+    text-decoration: none;
+    color: black;
+}
+
+md-content.main-ctr
+{
+    overflow-y: scroll;
+}

@@ -1,0 +1,30 @@
+.dualllist {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 100%; 
+	height: 100%;
+}
+
+.dualllist > .left, .dualllist > .right{
+    border-style: outset;
+    border-width: 2px;
+    border-color: silver;
+	border-radius: 5px;
+}
+
+.dualllist > .left > div > md-input-container, .dualllist > .right > div > md-input-container {
+	height: 20px;
+}
+
+.dualllist > md-content{
+	overflow-x: hidden;
+}
+
+.dualllist > .active{
+	background-color: #FAEBD7;
+}
+
+.dualllist > .left > md-toolbar, .dualllist > .right > md-toolbar{
+	min-height: 50px; 
+	max-height: 50px;
+}

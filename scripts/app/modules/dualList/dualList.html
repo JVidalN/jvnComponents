@@ -1,0 +1,21 @@
+﻿<link rel="stylesheet" type="text/css" href="scripts/app/modules/dualList/dualList.css">
+<div layout="row" layout-xs="column">
+	<div style="height: 750px; width: 590px;" flex="60" flex-xs="100">
+		<jvn-dual-list jvn-options="dlCtrl.options" jvn-left-scope="dlCtrl.dataLeft" jvn-right-scope="dlCtrl.dataRight" jvn-new-left-scope="dlCtrl.dataNewsLeft" jvn-new-right-scope="dlCtrl.dataNewsRight"></jvn-dual-list>
+	</div>
+	<div layout="column" flex layout-align="space-between stretch">
+		<h3 align="center">Showing models</h3>	
+		<div style="border: solid 1px; background-color: yellow;">
+    		<b>LEFT:</b>{{dlCtrl.dataLeft}}
+		</div>			
+		<div style="border: solid 1px; background-color: yellow;">			
+			<b>RIGHT:</b>{{dlCtrl.dataRight}}
+		</div>			
+		<div style="border: solid 1px;  background-color: red;">			
+    		<b>NEW LEFT:</b>{{dlCtrl.dataNewsLeft}}
+		</div>			
+		<div style="border: solid 1px; background-color: green;">
+    		<b>NEW RIGHT:</b>{{dlCtrl.dataNewsRight}}
+		</div>
+	</div>
+</div>

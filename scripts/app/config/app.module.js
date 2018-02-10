@@ -1,0 +1,1 @@
+var app = angular.module("jvnApp", ["ui.router", "ngMaterial", "ngMessages", "ngAnimate", "angular.filter", "jvnComponents", "ngAria"]);

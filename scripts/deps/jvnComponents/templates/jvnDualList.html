@@ -1,0 +1,126 @@
+<link rel="stylesheet" type="text/css" href="lib/js/jvnComponents/references/jvnDualList/css/jvnDualList.css">
+<div ng-controller="dualListCtrl as tCtrl" layout="row" layout-xs="column">
+		<div style="height: 750px; width: 590px;" flex="60">
+			<div ng-cloak layout="row" layout-xs="column" class="dualllist">
+			  	<div layout="column" flex md-scroll-shrink class="left">
+				    <md-toolbar layout-align="center center" layout="row" class="md-hue-3">
+			        	<span>{{tCtrl.options.leftLabel}}</span>
+				    </md-toolbar>
+				    <div layout="row" layout-align="space-between end">
+					    <md-input-container md-no-float class="md-block" flex>
+					    	<label>
+					    		<md-icon>search</md-icon>
+					    		{{tCtrl.options.leftSearchLabel}}
+				    		</label>
+				          	<input type="text" ng-model="searchLeft" ng-disabled="tCtrl.internLeftObject.length < 1">
+				        </md-input-container>
+			          	<md-checkbox ng-show="tCtrl.internLeftObject.length > 0" class="md-primary" ng-model="tCtrl.leftSelectAll" ng-checked="tCtrl.leftSelectAll" ng-change="tCtrl.selectAllOfLeft()" aria-label="Select All Left"></md-checkbox>
+		          	</div>
+				    <md-content flex layout-padding>
+				  		<md-list class="md-dense">
+					        <md-list-item ng-class="{active:lm.selected}" ng-repeat="lm in filteredLeftModel = (tCtrl.internLeftObject  | orderBy:tCtrl.options.orderByField | filter:{[tCtrl.options.searchByField] : searchLeft})">
+					        	<md-divider></md-divider>
+				            	<p>{{lm[tCtrl.options.displayedField]}}</p>
+				            	<md-checkbox class="md-primary" ng-model="lm.selected"></md-checkbox>
+					        </md-list-item>
+				      	</md-list>
+				    </md-content>
+			  		<md-divider></md-divider>
+			        <md-subheader class="md-primary">
+			        	<div layout="row" layout-align="space-between stretch">
+				        	<div ng-show="tCtrl.containsTrue(tCtrl.internLeftObject)">{{(tCtrl.internLeftObject | filter:{'selected':true}).length}} {{tCtrl.options.leftSelectFooterLabel}}</div>
+				        	<div ng-show="searchLeft">{{filteredLeftModel.length}} {{tCtrl.options.leftSearchFooterLabel}}</div> 
+				        	<div>{{tCtrl.internLeftObject.length}} {{tCtrl.options.leftFooterLabel}}</div>
+			        	</div>
+		        	</md-subheader>
+			  	</div>
+		  		<md-divider></md-divider>
+			  	<div layout="column" layout-xs="row" layout-align="center center" class="buttons">
+					<md-button ng-show="tCtrl.containsTrue(tCtrl.internLeftObject)" id="btnMoveRight" ng-click="tCtrl.moveToRight()" class="md-fab md-primary" layout="row">
+						<md-tooltip md-direction="top">Mover Para Direita</md-tooltip>
+						<md-icon>chevron_right</md-icon>
+					</md-button>
+					<md-button ng-show="tCtrl.containsTrue(tCtrl.internRightObject)" id="btnMoveLeft" ng-click="tCtrl.moveToLeft()" class="md-fab md-primary" layout="row">
+						<md-tooltip md-direction="top">Mover Para Esquerda</md-tooltip>
+						<md-icon>chevron_left</md-icon>
+					</md-button>
+			  	</div>	  	
+		  		<md-divider></md-divider>
+			  	<div layout="column" flex md-scroll-shrink class="right">
+					<md-toolbar layout-align="center center" layout="row" class="md-hue-3">
+			        	<span>{{tCtrl.options.rightLabel}}</span>
+				    </md-toolbar>
+				    <div layout="row" layout-align="space-between end">
+					    <md-input-container md-no-float class="md-block" flex>
+					    	<label>
+					    		<md-icon>search</md-icon>
+					    		{{tCtrl.options.rightSearchLabel}}
+				    		</label>
+				          	<input type="text" ng-model="searchRight" ng-disabled="tCtrl.internRightObject.length < 1">
+				        </md-input-container>
+			          	<md-checkbox ng-show="tCtrl.internRightObject.length > 0" class="md-primary" ng-model="tCtrl.rightSelectAll" ng-checked="tCtrl.rightSelectAll" ng-change="tCtrl.selectAllOfRight()" aria-label="Select All Right"></md-checkbox>
+		          	</div>
+				    <md-content flex layout-padding>
+				      	<md-list class="md-dense">
+					        <md-list-item ng-class="{active:rm.selected}" ng-repeat="rm in filteredRightModel = (tCtrl.internRightObject  | orderBy:tCtrl.options.orderByField |  filter:{[tCtrl.options.searchByField] : searchRight})">
+					        	<md-divider></md-divider>
+				            	<p>{{ rm[tCtrl.options.displayedField] }}</p>
+				            	<md-checkbox class="md-primary" ng-model="rm.selected"></md-checkbox>
+					        </md-list-item>
+				      	</md-list>
+				    </md-content>
+			  		<md-divider></md-divider>
+			        <md-subheader class="md-primary">
+			        	<div layout="row" layout-align="space-between stretch">
+				        	<div ng-show="tCtrl.containsTrue(tCtrl.internRightObject)">{{(tCtrl.internRightObject | filter:{'selected':true}).length}} {{tCtrl.options.rightSelectFooterLabel}}</div> 
+				        	<div ng-show="searchRight">{{filteredRightModel.length}} {{tCtrl.options.rightSearchFooterLabel}}</div> 
+				        	<div> {{tCtrl.internRightObject.length}} {{tCtrl.options.rightFooterLabel}}</div>
+			        	</div>
+		        	</md-subheader>
+			  	</div>
+			</div>
+		</div>
+		<div layout="column" flex layout-align="space-between stretch">
+			<h3 align="center">Showing models</h3>
+			<div style="border: solid 1px; background-color: silver;">
+
+	    		<b>LEFT INIT:</b>{{tCtrl.leftStateInitObject}}
+
+			</div>
+			<div style="border: solid 1px;  background-color: silver;">
+
+	    		<b>RIGHT INIT:</b>{{tCtrl.rightStateInitObject}}
+			
+			</div>			
+			<div style="border: solid 1px; background-color: yellow;">
+
+	    		<b>LEFT:</b>{{tCtrl.leftObject}}
+
+			</div>			
+			<div style="border: solid 1px; background-color: yellow;">			
+
+				<b>RIGHT:</b>{{tCtrl.rightObject}}
+
+			</div>			
+			<div style="border: solid 1px; background-color: red;">			
+
+	    		<b>NEW LEFT:</b>{{tCtrl.newLeftObject}}
+
+			</div>			
+			<div style="border: solid 1px; background-color: green;">			
+
+	    		<b>NEW RIGHT:</b>{{tCtrl.newRightObject}}
+
+			</div>			
+			<div style="border: solid 1px; background-color: yellow;">			
+
+	    		<b>INTERN LEFT:</b>{{tCtrl.internLeftObject}}
+
+			</div>			
+			<div style="border: solid 1px; background-color: yellow;">			
+			
+				<b>INTERN RIGHT:</b>{{tCtrl.internRightObject}}
+
+			</div>
+    	</div>
+</div>

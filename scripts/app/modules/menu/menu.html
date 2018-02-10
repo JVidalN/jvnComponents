@@ -1,0 +1,26 @@
+﻿<link rel="stylesheet" type="text/css" href="scripts/app/modules/menu/menu.css">
+<div align="center">
+	<div>
+		Explicação
+	</div>
+	<div class="menuSample">
+	    <div>
+	        <md-toolbar md-scroll-shrink>
+	            <div class="md-toolbar-tools responsive" layout="row" layout-align="space-between center">
+	                <div>
+	                    <md-button class="md-icon-button" aria-label="Menu">
+	                        <md-icon ng-click="menuCtrl.toggleLeft()">menu</md-icon>
+	                    </md-button>
+	                </div>
+	            </div>
+	        </md-toolbar>
+	    </div>
+	    <div flex class="md-sidenav-left">
+	        <md-sidenav md-component-id="leftSample" md-whiteframe="4">
+	            <div class="sidenav-config" layout="column">
+	                <jvn-menu jvn-menu-data="menuCtrl.dataMenu"></jvn-menu>
+	            </div>
+	        </md-sidenav>
+	    </div>
+	</div>
+</div>

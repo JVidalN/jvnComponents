@@ -1,0 +1,16 @@
+.menuSample{
+	width: 50%;
+}
+
+main {
+  overflow-y: auto;
+}
+
+.responsive {
+    font-size: calc(0.55em + 1vmin) !important;
+}
+
+.sidenav-config{
+    height: 100%; 
+    overflow: auto;
+}

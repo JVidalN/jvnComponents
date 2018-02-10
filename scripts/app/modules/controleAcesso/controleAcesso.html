@@ -1,0 +1,30 @@
+﻿<link rel="stylesheet" type="text/css" href="scripts/app/modules/controleAcesso/controleAcesso.css">
+<div layout="column" layout-align="space-between center" jvn-controle-acesso="caCtrl.SourceAccessControl">
+    <h1>Controle de Acesso UI</h1>
+    <div layout="column" layout-align="space-between start">
+    	<div layout="row" layout-align="center center">
+    		BUTTON ENABLE: 
+        	<md-button class="md-raised md-primary" ng-click="caCtrl.alerta('SUCESSO')">BUTTON 1</md-button>
+    	</div>
+    	<div layout="row" layout-align="center center">
+    		BUTTON DISABLE: 
+        	<md-button class="md-raised md-primary" permisssaoId='btn1' ng-click="caCtrl.alerta('FALHOU')">BUTTON 2</md-button>
+    	</div>
+    	<div layout="row" layout-align="center center">
+    		BUTTON HIDE: 
+        	<md-button class="md-raised md-primary" permisssaoId='btn2' ng-click="caCtrl.alerta('FALHOU')">BUTTON 3</md-button>
+    	</div>
+    	<div layout="row" layout-align="center center">
+    		BUTTON ENABLE: 
+        	<a href="" ng-click="caCtrl.alerta('SUCESSO')">LINK 1</a> 
+    	</div>
+    	<div layout="row" layout-align="center center">
+    		BUTTON DISABLE: 
+        	<a permisssaoId='link1' href="" ng-click="caCtrl.alerta('FALHOU')">LINK 2</a> 
+    	</div>
+    	<div layout="row" layout-align="center center">
+    		BUTTON HIDE: 
+        	<a permisssaoId='link2' href="" ng-click="caCtrl.alerta('FALHOU')">LINK 3</a>
+    	</div>
+    </div>
+</div>

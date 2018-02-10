@@ -1,0 +1,53 @@
+html { 
+    font-family: "Arial" !important;
+    font-size: 10px !important;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+ display: none !important;
+}
+
+main {
+  overflow-y: auto !important;
+}
+
+.responsive {
+    font-size: calc(0.55em + 1vmin) !important;
+}
+
+.sidenav-config{
+    height: 100% !important;
+    overflow: auto !important;
+}
+
+.hint {
+    /* Position the hint */
+    position: absolute !important;
+    left: 2px !important;
+    right: auto !important;
+    bottom: 7px !important;
+    /* Copy styles from ng-messages */
+    font-size: 12px !important;
+    line-height: 14px !important;
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2) !important;
+    /* Set our own color */
+    color: grey !important;
+
+}
+
+.hint.ng-hide, .hint.ng-enter, .hint.ng-leave.ng-leave-active {
+    bottom: 26px !important;
+    opacity: 0 !important; 
+
+}
+
+.hint.ng-leave, .hint.ng-enter.ng-enter-active {
+    bottom: 7px !important;
+    opacity: 1 !important; 
+
+}
+
+/*TO WORK md-is-locked-open="$mdMedia('gt-md')"*/
+md-sidenav, md-backdrop.md-opaque { 
+    position:fixed !important;
+}
