@@ -17,33 +17,31 @@ All references are described below.
 
 1. jvnControleAcesso
 
-	Directive based on this [Access Control Directive](http://gabrielfeitosa.com/angularjs-diretiva-para-controle-de-acesso/).
+		Directive based on this [Access Control Directive](http://gabrielfeitosa.com/angularjs-diretiva-para-controle-de-acesso/).
 
 2. jvnDataTable
 
-	Directive created based on the following items:
+		Directive created based on the following items:
 
-	* [responsive-md-data-table](https://github.com/paghdalyogesh/responsive-md-data-table);
-	* [export data](http://jsfiddle.net/TheSharpieOne/XNVj3/1/);
-	* [export to pdf](http://pdfmake.org/#/gettingstarted);
-
-	Directive based on this [responsive-md-data-table](https://github.com/paghdalyogesh/responsive-md-data-table).
+		* [responsive-md-data-table](https://github.com/paghdalyogesh/responsive-md-data-table)
+		* [export data](http://jsfiddle.net/TheSharpieOne/XNVj3/1/)
+		* [export to pdf](http://pdfmake.org/#/gettingstarted)
 
 3. jvnDualList
 
-	Directive based on this [ng-duallist](https://github.com/tushariscoolster/ng-duallist).
+		Directive based on this [ng-duallist](https://github.com/tushariscoolster/ng-duallist).
 
 4. jvnInputFile
 
-	Directive based on this [Angular Material File Input](https://codepen.io/shepard_one/pen/MypdLy).
+		Directive based on this [Angular Material File Input](https://codepen.io/shepard_one/pen/MypdLy).
 
 5. jvnLoader	
 
-	Directive based on the idea of ​​how to use my friend [Tiago Carmo](https://github.com/tiagocarmosantos/)
+		Directive based on the idea of ​​how to use my friend [Tiago Carmo](https://github.com/tiagocarmosantos/)
 
 6. jvnMenu
 
-	Directive based on this [Sidenav Menu](http://plnkr.co/edit/Ksfo7fnSB0c4DH6egE3S?p=preview).
+		Directive based on this [Sidenav Menu](http://plnkr.co/edit/Ksfo7fnSB0c4DH6egE3S?p=preview).
 
 ## Getting Started
 

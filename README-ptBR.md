@@ -16,31 +16,31 @@ Todas as referências estão descritas abaixo.
 
 1. jvnControleAcesso
 
-	Diretiva criada com base nessa [Diretiva para Controle de Acesso](http://gabrielfeitosa.com/angularjs-diretiva-para-controle-de-acesso/).
+		Diretiva criada com base nessa [Diretiva para Controle de Acesso](http://gabrielfeitosa.com/angularjs-diretiva-para-controle-de-acesso/).
 
 2. jvnDataTable
 
-	Diretiva criada com base nos seguintes itens:
+		Diretiva criada com base nos seguintes itens:
 
-	* [responsive-md-data-table](https://github.com/paghdalyogesh/responsive-md-data-table);
-	* [export data](http://jsfiddle.net/TheSharpieOne/XNVj3/1/);
-	* [export to pdf](http://pdfmake.org/#/gettingstarted).
+		* [responsive-md-data-table](https://github.com/paghdalyogesh/responsive-md-data-table)
+		* [export data](http://jsfiddle.net/TheSharpieOne/XNVj3/1/)
+		* [export to pdf](http://pdfmake.org/#/gettingstarted)
 
 3. jvnDualList
 
-	Diretiva criada com base nessa [ng-duallist](https://github.com/tushariscoolster/ng-duallist).
+		Diretiva criada com base nessa [ng-duallist](https://github.com/tushariscoolster/ng-duallist).
 
 4. jvnInputFile
 
-	Diretiva criada com base nesse [Angular Material File Input](https://codepen.io/shepard_one/pen/MypdLy).
+		Diretiva criada com base nesse [Angular Material File Input](https://codepen.io/shepard_one/pen/MypdLy).
 
 5. jvnLoader
 
-	Diretiva craida com base na ideia da forma de utilização de meu amigo [Tiago Carmo](https://github.com/tiagocarmosantos/)
+		Diretiva craida com base na ideia da forma de utilização de meu amigo [Tiago Carmo](https://github.com/tiagocarmosantos/)
 
 6. jvnMenu
 
-	Diretiva criada com base nesse [Sidenav Menu](http://plnkr.co/edit/Ksfo7fnSB0c4DH6egE3S?p=preview).
+		Diretiva criada com base nesse [Sidenav Menu](http://plnkr.co/edit/Ksfo7fnSB0c4DH6egE3S?p=preview).
 
 ## Começando
 
