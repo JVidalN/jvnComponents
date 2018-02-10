@@ -15,11 +15,11 @@ All references are described below.
 
 ## References
 
-1. jvnControleAcesso
+1. **jvnControleAcesso**
 
 	Directive based on this [Access Control Directive](http://gabrielfeitosa.com/angularjs-diretiva-para-controle-de-acesso/).
 
-2. jvnDataTable
+2. **jvnDataTable**
 
 	Directive created based on the following items:
 
@@ -27,19 +27,19 @@ All references are described below.
 	* [export data](http://jsfiddle.net/TheSharpieOne/XNVj3/1/)
 	* [export to pdf](http://pdfmake.org/#/gettingstarted)
 
-3. jvnDualList
+3. **jvnDualList**
 
 	Directive based on this [ng-duallist](https://github.com/tushariscoolster/ng-duallist).
 
-4. jvnInputFile
+4. **jvnInputFile**
 
 	Directive based on this [Angular Material File Input](https://codepen.io/shepard_one/pen/MypdLy).
 
-5. jvnLoader	
+5. **jvnLoader**
 
 	Directive based on the idea of ​​how to use my friend [Tiago Carmo](https://github.com/tiagocarmosantos/)
 
-6. jvnMenu
+6. **jvnMenu**
 
 	Directive based on this [Sidenav Menu](http://plnkr.co/edit/Ksfo7fnSB0c4DH6egE3S?p=preview).
 
