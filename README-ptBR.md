@@ -69,7 +69,7 @@ A estrutura básica do projeto foi organizada da seguinte forma:
 ```
 
 
-### Pré-requisitos
+## Pré-requisitos
 
 Adicionar as seguintes referências para o bom funcionamento das diretivas:
 
@@ -80,4 +80,4 @@ Adicionar as seguintes referências para o bom funcionamento das diretivas:
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para obter detalhes.
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](https://github.com/LegolasDBA/jvnComponents/blob/master/LICENSE.md) para obter detalhes.

@@ -71,7 +71,7 @@ The basic structure of the project was organized as follows:
 
 
 
-### Prerequisites
+## Prerequisites
 
 Add the following references for the proper functioning of the directives:
 
@@ -82,4 +82,4 @@ Add the following references for the proper functioning of the directives:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/LegolasDBA/jvnComponents/blob/master/LICENSE.md) file for details.
