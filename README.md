@@ -40,7 +40,6 @@ Also, I used windows IIS and call localhost in the browser to start the app.
 The basic structure of the project was organized as follows:
 
 ```
-.
 |-- content/
 |   |-- images
 |   |-- material-design-icons				//For use material design icons offline.

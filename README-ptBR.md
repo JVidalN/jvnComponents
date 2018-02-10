@@ -39,7 +39,6 @@ Além disso, para este projeto utilizei o IIS do windows, e chamo o localhost no
 A estrutura básica do projeto foi organizada da seguinte forma:
 
 ```
-.
 |-- content/
 |   |-- images
 |   |-- material-design-icons				//For use material design icons offline.
