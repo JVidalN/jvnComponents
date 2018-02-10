@@ -78,6 +78,10 @@ Adicionar as seguintes referências para o bom funcionamento das diretivas:
 * [Angular Material](https://material.angularjs.org)
 * [Material Design Icons](https://material.io/icons/)
 
+## Demo JvnComponentes
+
+[App Demo](https://rawgit.com/LegolasDBA/jvnComponents/master/index.html)
+
 ## Licença
 
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](https://github.com/LegolasDBA/jvnComponents/blob/master/LICENSE.md) para obter detalhes.

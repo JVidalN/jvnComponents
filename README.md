@@ -80,6 +80,10 @@ Add the following references for the proper functioning of the directives:
 * [Angular Material](https://material.angularjs.org)
 * [Material Design Icons](https://material.io/icons/)
 
+## Demo JvnComponentes
+
+[App Demo](https://rawgit.com/LegolasDBA/jvnComponents/master/index.html)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/LegolasDBA/jvnComponents/blob/master/LICENSE.md) file for details.
