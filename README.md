@@ -5,90 +5,81 @@
 # jvnComponents
 
 Personal project of directives with AngularJS, using Angular Material, to facilitate the development of apps.
+Personal project of directives with AngularJS using the Angular Material and Material Icons, to facilitate the development of apps.
+
+Some of these components were created based on already existing components, however, controls and functionalities were included that I found pertinent to facilitate the use, besides using the Angular Material and Material Icons.
+
+All references are described below.
 
 > **Developer:** [Jean Vidal Nunes](https://github.com/LegolasDBA)
 
-<!-- ## Getting Started
+## References
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+1. jvnControleAcesso
+
+2. jvnDataTable
+
+3. jvnDualList
+
+4. jvnInputFile
+
+5. jvnLoader
+
+6. jvnMenu
+
+7. jvnModule
+
+## Getting Started
+
+To test the components I currently use Node.js, where it is used to store the data that will be consumed by the AngularJS service. If you do not want to use Node.js, simply put the data directly into the AngularJS controller.
+
+Also, I used windows IIS and call localhost in the browser to start the app.
+
+## Project Structure
+
+The basic structure of the project was organized as follows:
+
+```
+.
+|-- content/
+|   |-- images
+|   |-- material-design-icons				//For use material design icons offline.
+|-- scripts/
+|   |-- app
+|   |   |-- config
+|   |   |-- directives
+|   |   |-- factory
+|   |   |-- filters
+|   |   |-- interceptors
+|   |   |-- modules
+|   |   |   |-- Exemple						//For all codes that involve this module.
+|   |   |   |   |-- exemple.controller.js
+|   |   |   |   |-- exemple.css
+|   |   |   |   |-- exemple.html
+|   |   |   |   |-- exemple.service.js
+|   |   |-- services						//For general services.
+|   |-- deps
+|   |   |-- angular
+|   |   |-- angular-material
+|   |   |-- angular-material-icons
+|   |   |-- angular-ui-router
+|   |   |-- jquery
+|   |   |-- jvnComponents
+|   |   |-- moment
+|   |   |-- others
+```
+
+
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Add the following references for the proper functioning of the directives:
 
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* [JQuery](https://jquery.com/)
+* [AngularJS](https://angularjs.org/)
+* [Angular Material](https://material.angularjs.org)
+* [Material Design Icons](https://material.io/icons/)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
- -->
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

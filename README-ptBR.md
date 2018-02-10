@@ -4,91 +4,80 @@
 
 # jvnComponents
 
-Projeto pessoal de criação de diretivas com AngularJS utilizando o Angular Material, para facilitar o desenvolvimento de apps.
+Projeto pessoal de criação de diretivas com AngularJS utilizando o Angular Material e Material Icons, para facilitar o desenvolvimento de apps.
+
+Alguns desses componentes foram criados baseados em componentes já existentes, porém, foram incluídos controles e funcionalidades que achei pertinente para facilitar o uso, além de utilizar o Angular Material e Material Icons. 
+
+Todas as referências estão descritas abaixo.
 
 > **Desenvolvedor:** [Jean Vidal Nunes](https://github.com/LegolasDBA)
 
-<!-- ## Getting Started
+## Referências
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+1. jvnControleAcesso
 
-### Prerequisites
+2. jvnDataTable
 
-What things you need to install the software and how to install them
+3. jvnDualList
 
-```
-Give examples
-```
+4. jvnInputFile
 
-### Installing
+5. jvnLoader
 
-A step by step series of examples that tell you have to get a development env running
+6. jvnMenu
 
-Say what the step will be
+7. jvnModule
 
-```
-Give the example
-```
+## Começando
 
-And repeat
+Para testar os componentes atualmente utilizo o Node.js, onde o mesmo é utilizado para guardar os dados que serão consumidos pelo service do AngularJS. Caso não queira utilizar o Node.js, basta colocar os dados diretamente na controller do angular.
 
-```
-until finished
-```
+Além disso, para este projeto utilizei o IIS do windows, e chamo o localhost no browser para iniciar o app.
 
-End with an example of getting some data out of the system or using it for a little demo
+## Estrutura do Projeto
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+A estrutura básica do projeto foi organizada da seguinte forma:
 
 ```
-Give an example
+.
+|-- content/
+|   |-- images
+|   |-- material-design-icons				//For use material design icons offline.
+|-- scripts/
+|   |-- app
+|   |   |-- config
+|   |   |-- directives
+|   |   |-- factory
+|   |   |-- filters
+|   |   |-- interceptors
+|   |   |-- modules
+|   |   |   |-- Exemple						//For all codes that involve this module.
+|   |   |   |   |-- exemple.controller.js
+|   |   |   |   |-- exemple.css
+|   |   |   |   |-- exemple.html
+|   |   |   |   |-- exemple.service.js
+|   |   |-- services						//For general services.
+|   |-- deps
+|   |   |-- angular
+|   |   |-- angular-material
+|   |   |-- angular-material-icons
+|   |   |-- angular-ui-router
+|   |   |-- jquery
+|   |   |-- jvnComponents
+|   |   |-- moment
+|   |   |-- others
 ```
 
-### And coding style tests
 
-Explain what these tests test and why
+### Pré-requisitos
 
-```
-Give an example
-```
+Adicionar as seguintes referências para o bom funcionamento das diretivas:
 
-## Deployment
+* [JQuery](https://jquery.com/)
+* [AngularJS](https://angularjs.org/)
+* [Angular Material](https://material.angularjs.org)
+* [Material Design Icons](https://material.io/icons/)
 
-Add additional notes about how to deploy this on a live system
+## Licença
 
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
- -->
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para obter detalhes.
