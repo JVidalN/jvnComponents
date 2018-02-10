@@ -1,12 +1,12 @@
-*[Leia a documentação em Português](https://github.com/LegolasDBA/jvnComponents/blob/master/README-ptBR.md)*
+*[Read the documentation in English](https://github.com/LegolasDBA/jvnComponents/blob/master/README.md)*
 
 ---
 
 # jvnComponents
 
-Personal project of directives with AngularJS, using Angular Material, to facilitate the development of apps.
+Projeto pessoal de criação de diretivas com AngularJS utilizando o Angular Material, para facilitar o desenvolvimento de apps.
 
-> **Developer:** [Jean Vidal Nunes](https://github.com/LegolasDBA)
+> **Desenvolvedor:** [Jean Vidal Nunes](https://github.com/LegolasDBA)
 
 <!-- ## Getting Started
 
