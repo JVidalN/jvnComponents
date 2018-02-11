@@ -3,9 +3,7 @@
 
     jvnApp.directive('jvnControleAcesso', jvnControleAcesso);
 
-    jvnControleAcesso.$inject = ['$compile'];
-
-    function jvnControleAcesso($compile){
+    function jvnControleAcesso(){
         var directive = {
             restrict: 'A',
             link: linkFunc,            
