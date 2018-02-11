@@ -143,20 +143,20 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md][l
 	Diretiva criada com base/inspiração nesse [Sidenav Menu][sidenavMenu]:.
 
 
-[readmeEnglish]: https://github.com/LegolasDBA/jvnComponents/blob/master/README.md
+[readmePortuguese]: https://github.com/LegolasDBA/jvnComponents/blob/master/README-ptBR.md
 [myGit]: https://github.com/LegolasDBA
 [contentPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/content
 [imagesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/content/images
 [materialDesignIconsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/content/material-design-icons
 [scriptsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts
 [appPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app
-[configPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app
-[directivesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app
-[factoryPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app
-[filtersPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app
-[interceptorsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app
-[modulesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app
-[servicesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app
+[configPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/config
+[directivesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/directives
+[factoryPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/factory
+[filtersPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/filters
+[interceptorsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/interceptors
+[modulesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/modules
+[servicesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/services
 [depsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/deps
 [AppDemo]: https://rawgit.com/LegolasDBA/jvnComponents/master/index.html
 [licenseMIT]: https://github.com/LegolasDBA/jvnComponents/blob/master/LICENSE.md
