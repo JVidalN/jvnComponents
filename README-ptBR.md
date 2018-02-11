@@ -143,7 +143,7 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md][l
 	Diretiva criada com base/inspiração nesse [Sidenav Menu][sidenavMenu]:.
 
 
-[readmePortuguese]: https://github.com/LegolasDBA/jvnComponents/blob/master/README-ptBR.md
+[readmeEnglish]: https://github.com/LegolasDBA/jvnComponents/blob/master/README.md
 [myGit]: https://github.com/LegolasDBA
 [contentPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/content
 [imagesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/content/images
