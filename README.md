@@ -8,7 +8,7 @@ Personal project of directives with AngularJS using the Angular Material and Mat
 
 Some of these components were created based on already existing components, however, controls and functionalities were included that I found pertinent to facilitate the use, besides using the Angular Material and Material Icons.
 
-All references are described in [Acknowledgments](##Acknowledgments).
+All references are described in [Acknowledgment](#acknowledgment).
 
 > **Developer:** [Jean Vidal Nunes][myGit]
 

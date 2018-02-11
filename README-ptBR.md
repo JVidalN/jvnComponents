@@ -8,7 +8,7 @@ Projeto pessoal de criação de diretivas com AngularJS utilizando o Angular Mat
 
 Alguns desses componentes foram criados baseados em componentes já existentes, porém, foram incluídos controles e funcionalidades que achei pertinente para facilitar o uso, além de utilizar o Angular Material e Material Icons. 
 
-Todas as referências estão descritas em [Reconhecimentos](##Reconhecimentos).
+Todas as referências estão descritas em [Reconhecimento](#reconhecimento).
 
 > **Desenvolvedor:** [Jean Vidal Nunes][myGit]
 
