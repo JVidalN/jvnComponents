@@ -167,4 +167,4 @@ This project is licensed under the MIT License - see the [LICENSE.md][licenseMIT
 [DualList]: https://github.com/tushariscoolster/ng-duallist
 [AngularMaterialFileInput]: https://codepen.io/shepard_one/pen/MypdLy
 [tcs]: https://github.com/tiagocarmosantos/
-[sidenavMenu]: http://plnkr.co/edit/Ksfo7fnSB0c4DH6egE3S?p=preview)
+[sidenavMenu]: http://plnkr.co/edit/Ksfo7fnSB0c4DH6egE3S?p=preview
