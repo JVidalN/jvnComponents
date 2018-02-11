@@ -104,7 +104,7 @@ Add the following references for the proper functioning of the directives:
 * [Angular Material](https://material.angularjs.org)
 * [Material Design Icons](https://material.io/icons/)
 
-## Demo JvnComponentes
+## Demo JvnComponents
 
 [App Demo][AppDemo]
 
@@ -128,15 +128,15 @@ This project is licensed under the MIT License - see the [LICENSE.md][licenseMIT
 
 3. **jvnDualList**
 
-	Directive based on/inspired by this [Dual List][DualList]
+	Directive based on/inspired by this [Dual List][DualList].
 
 4. **jvnInputFile**
 
-	Directive based on/inspired by this [Angular Material File Input][AngularMaterialFileInput]
+	Directive based on/inspired by this [Angular Material File Input][AngularMaterialFileInput].
 
 5. **jvnLoader**
 
-	Directive based on/inspired by the idea of ​​how to use my [friend][tcs]
+	Directive based on/inspired by the idea of ​​how to use my [friend][tcs].
 
 6. **jvnMenu**
 

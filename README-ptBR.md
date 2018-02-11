@@ -104,7 +104,7 @@ Adicionar as seguintes referências para o bom funcionamento das diretivas:
 * [Angular Material](https://material.angularjs.org)
 * [Material Design Icons](https://material.io/icons/)
 
-## Demo JvnComponentes
+## Demo JvnComponents
 
 [App Demo][AppDemo]
 
@@ -136,11 +136,11 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md][l
 
 5. **jvnLoader**
 
-	Diretiva criada com base/inspiração na ideia da forma de utilização de meu [amigo][tcs]
+	Diretiva criada com base/inspiração na ideia da forma de utilização de meu [amigo][tcs].
 
 6. **jvnMenu**
 
-	Diretiva criada com base/inspiração nesse [Sidenav Menu][sidenavMenu]:.
+	Diretiva criada com base/inspiração nesse [Sidenav Menu][sidenavMenu].
 
 
 [readmeEnglish]: https://github.com/LegolasDBA/jvnComponents/blob/master/README.md
