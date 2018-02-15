@@ -70,7 +70,7 @@
           	};
         }
 
-        vm.toggleLeft = buildToggler('leftSample');
+        vm.toggleLeft = buildToggler('left_sample');
         //FIM CÓDIGO PARA ABRIR OU FECHAR O SIDENAV (Menu fica dentro do SideNav)    
     }
 })();

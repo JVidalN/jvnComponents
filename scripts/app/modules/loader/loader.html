@@ -1,4 +1,22 @@
 ﻿<link rel="stylesheet" type="text/css" href="scripts/app/modules/loader/loader.css">
 <div>
-    Loader
+	<div layout="row">
+		<md-button class="md-raised md-primary" ng-click="loaderCtrl.loading=true">Ativar</md-button>
+		<md-button class="md-raised md-primary" ng-click="loaderCtrl.loading=false">Desativar</md-button>
+      	<md-input-container class="md-block" flex-gt-sm>
+        	<input placeholder="Mensagem" ng-model="loaderCtrl.options.message">
+      	</md-input-container>
+      	<md-input-container class="md-block" flex-gt-sm>
+        	<input placeholder="Colors" ng-model="loaderCtrl.options.colors">
+      	</md-input-container>
+		<md-button class="md-raised md-primary" ng-click="loaderCtrl.changeColors(loaderCtrl.options.colors)">Mudar</md-button>
+    </div>
+	<div layout="column" layout-align="center center" ng-show="loaderCtrl.loading">
+    	<div> 
+    		<h1>{{loaderCtrl.options.message}}</h1> 
+    	</div> 
+    	<div id="jvnLoader" class="loaderDefault">    		
+    		<!-- <div class="teste"></div> -->
+    	</div>
+	</div>
 </div>
