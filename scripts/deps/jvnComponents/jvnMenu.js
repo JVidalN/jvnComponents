@@ -24,7 +24,7 @@
 
         function linkFunc(scope, element, attrs){  
 
-    	    scope.$watch(function () {return [scope.menudata,attrs.ordenacaoPadrao];}, function(newVal, oldVal, scope) {
+    	    scope.$watch('[scope.menudata,attrs.ordenacaoPadrao]', function(newVal, oldVal, scope) {
 
                 //NAGEVAÇÃO DO MENU
                 scope.mainMenu = true;

@@ -1,0 +1,68 @@
+
+.not-parent:before{
+}
+
+.parent:before{
+    font-family: 'Material Icons';
+    content: '\e315';
+	text-align:center;
+	cursor:pointer;
+  	display: inline-block;
+  	vertical-align: text-bottom;
+  	font-size: 15px;
+  	width: 20px;
+  	height: 20px;
+  	margin-right: 1px;
+}
+
+* {
+  	margin: 0px;
+  	padding: 0px;
+}
+
+body {
+  	margin: 50px;
+}
+
+ul {
+  	margin: 0px 0px 0px 20px;
+  	list-style: none;
+  	line-height: 2em;
+  	font-family: Arial;
+}
+ul li {
+  	font-size: 15px;
+  	position: relative;
+}
+ul li:before {
+  	position: absolute;
+  	left: -15px;
+  	top: 0px;
+  	content: '';
+  	display: block;
+  	border-left: 1px solid #ddd;
+  	height: 1em;
+  	border-bottom: 1px solid #ddd;
+  	width: 10px;
+}
+ul li:after {
+  	position: absolute;
+  	left: -15px;
+  	bottom: -7px;
+  	content: '';
+  	display: block;
+  	border-left: 1px solid #ddd;
+  	height: 100%;
+}
+ul li.jvn-treeview {
+  	margin: 0px 0px 0px -20px;
+}
+ul li.jvn-treeview:before {
+  	display: none;
+}
+ul li.jvn-treeview:after {
+  	display: none;
+}
+ul li:last-child:after {
+  	display: none;
+}

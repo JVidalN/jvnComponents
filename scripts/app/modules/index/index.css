@@ -1,23 +1,56 @@
 html { 
-    font-family: "Arial" !important;
-    font-size: 10px !important;
+    font-family: "Arial" !important; 
+}
+
+body{
+    overflow: hidden;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
- display: none !important;
+    display: none !important;
 }
 
 main {
-  overflow-y: auto !important;
+    overflow-y: auto;
 }
 
-.responsive {
-    font-size: calc(0.55em + 1vmin) !important;
+.fontResponsive {
+    font-size: calc(0.45em + 1vmin) !important;
 }
 
 .sidenav-config{
-    height: 100% !important;
-    overflow: auto !important;
+    height: 100%; 
+    overflow: auto;
+}
+
+.altura-toolbar{
+    min-height: 40px;
+    max-height: 40px;
+}
+
+.altura-logo{
+    height: 36px;
+}
+
+header {
+    -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
+    -moz-box-shadow:    0px 3px 5px rgba(100, 100, 100, 0.49);
+    box-shadow:         0px 3px 5px rgba(100, 100, 100, 0.49);
+}
+
+footer {
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.49);
+    -moz-box-shadow:    0px -4px 5px 0px rgba(0,0,0,0.49);
+    box-shadow:         0px -4px 5px 0px rgba(0,0,0,0.49);
+
+    
+    transition: 3s ease-in-out;
+    height: 5px;
+}
+
+footer:hover {
+    transition: 0.200s ease-in-out;
+    height: 40px;
 }
 
 .hint {
@@ -32,22 +65,32 @@ main {
     transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2) !important;
     /* Set our own color */
     color: grey !important;
-
 }
 
 .hint.ng-hide, .hint.ng-enter, .hint.ng-leave.ng-leave-active {
     bottom: 26px !important;
     opacity: 0 !important; 
-
 }
 
 .hint.ng-leave, .hint.ng-enter.ng-enter-active {
     bottom: 7px !important;
     opacity: 1 !important; 
+}
 
+.sidenav-width{
+    max-width:250px;
 }
 
 /*TO WORK md-is-locked-open="$mdMedia('gt-md')"*/
 md-sidenav, md-backdrop.md-opaque { 
     position:fixed !important;
+}
+
+.not-selectable {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }

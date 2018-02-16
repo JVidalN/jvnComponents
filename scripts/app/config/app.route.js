@@ -45,6 +45,11 @@
             templateUrl: "scripts/app/modules/loader/loader.html",
             controller: 'LoaderCtrl as loaderCtrl'
         })
+        .state('treeViewState', {
+            url: '/treeView',
+            templateUrl: "scripts/app/modules/treeView/treeView.html",
+            controller: 'TreeViewCtrl as treeViewCtrl'
+        })
         .state("401State", {
             url: '/401',
             templateUrl: "scripts/app/modules/erro/unauthorized.html"

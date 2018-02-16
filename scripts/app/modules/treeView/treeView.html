@@ -1,0 +1,22 @@
+﻿<link rel="stylesheet" type="text/css" href="scripts/app/modules/treeView/treeView.css">
+<script type="text/javascript">
+	$(document).ready(function(){
+		var parent = $(".parent");
+		parent.on("click",function(){
+			$(this).parent().find("ul:first").slideToggle();
+		})
+	});
+</script>
+<div layout="column" layout-align="center center">
+    <script type="text/ng-template" id="nodoTree">
+        <span ng-class="nodo.parent.length > 0?'parent':'not-parent'">{{ nodo.descricao }}</span>
+        <ul ng-if="nodo.parent.length > 0">
+            <li ng-repeat="nodo in nodo.parent" ng-include="'nodoTree'"></li>
+        </ul>
+    </script>
+    <div class="jvn-treeview">
+	    <ul>
+	        <li ng-repeat="nodo in treeViewCtrl.dataList1" ng-include="'nodoTree'"></li>
+	    </ul>
+    </div>
+</div>

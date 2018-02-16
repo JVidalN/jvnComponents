@@ -1,29 +1,32 @@
 ﻿<!DOCTYPE html>
-<html lang="en" ng-app="jvnApp" ng-cloak>
+<html lang="pt-br" ng-app="jvnApp" ng-controller="IndexCtrl as indexCtrl">
     <head>
+    
         <base href="/jvnComponents/">
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="content/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
         <meta name="theme-color" content="#009933">
-        <title>JVN Components</title>
+
+        <link rel="stylesheet" type="text/css" href="scripts/app/modules/index/index.css">
+        <link href="content/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+        <title ng-bind="page.title()">JVN Components</title>
 
     </head>
-    <link rel="stylesheet" type="text/css" href="scripts/app/modules/index/index.css">
-    <body ng-controller="HomeCtrl as homeCtrl" md-theme="homeCtrl.actualTheme" class="responsive">
-        <div layout="column" layout-fill>
-            <header>
-                <md-toolbar md-scroll-shrink>
-                    <div class="md-toolbar-tools responsive" layout="row" layout-align="space-between center">
+    <body md-theme="indexCtrl.actualTheme" md-theme-watch="true" class="fontResponsive" ng-cloak>
+        <div jvn-controle-acesso="indexCtrl.SourceAccessControl" layout="column" layout-fill>
+            <header class="md-headline">
+                <md-toolbar md-scroll-shrink class="altura-toolbar">
+                    <div class="md-toolbar-tools fontResponsive not-selectable" layout="row" layout-align="space-between center">
                         <!-- <div hide-gt-md> -->
                         <div>
                             <md-button class="md-icon-button" aria-label="Menu">
-                                <md-icon ng-click="homeCtrl.toggleLeft()">menu</md-icon>
+                                <md-icon ng-click="indexCtrl.toggleLeft()">menu</md-icon>
                             </md-button>
                         </div>
                         <div>
-                            <h3 class="md-toolbar-tools" >{{homeCtrl.nomeDoSistema}}</h3>
+                            <h3 class="md-toolbar-tools" >{{indexCtrl.nomeDoSistema}}</h3>
                         </div>
                         <div>
                             <relogio></relogio>
@@ -31,23 +34,23 @@
                     </div>
                 </md-toolbar>
             </header>
-            <main flex class="md-sidenav-left">
+            <main flex class="md-sidenav-left md-body-1">
                 <!-- <md-sidenav md-component-id="left" md-whiteframe="4" md-is-locked-open="$mdMedia('gt-md')"> -->
-                    <md-sidenav md-component-id="left" md-whiteframe="4">
-                    <div class="sidenav-config" layout="column">
-                        <jvn-menu jvn-menu-data="homeCtrl.dataMenu"></jvn-menu>
-                    </div>
-                </md-sidenav>
+                    <md-sidenav class="sidenav-width" md-component-id="left" md-whiteframe="4">
+                        <div class="sidenav-config" layout="column">
+                            <jvn-menu jvn-menu-data="indexCtrl.dataMenu"></jvn-menu>
+                        </div>
+                    </md-sidenav>
                 <jvn-loader></jvn-loader>
                 <div ui-view="" ng-hide="loading"></div>
             </main>
-            <footer>
-                <md-toolbar layout="row" layout-align="space-around center" class="responsive">
+            <footer class="md-headline">
+                <md-toolbar layout="row" layout-align="space-around center" class="altura-toolbar fontResponsive not-selectable">
                     <div>
-                        <img ng-src="{{'content/images/jvnLogoTemp.png'}}" height="30" width="120" alt="JVN Logo"/>
+                        <img ng-src="{{'content/images/jvnLogoTemp.png'}}" width="120" alt="JVN Logo"/>
                     </div>
                     <div >
-                        <p>&copy;{{homeCtrl.date | date:'yyyy'}} - {{homeCtrl.nomeDoSistema}}</p>
+                        <span>&copy;{{indexCtrl.date | date:'yyyy'}} - {{indexCtrl.nomeDoSistema}}</span>
                     </div>
                 </md-toolbar>
             </footer>
@@ -96,6 +99,7 @@
     <script type="text/javascript" src="scripts/app/filters/parseJsonDate.filter.js"></script>
 
     <!-- SCRIPTS CONTROLLERS -->
+    <script type="text/javascript" src="scripts/app/modules/index/index.controller.js"></script>
     <script type="text/javascript" src="scripts/app/modules/home/home.controller.js"></script>
     <script type="text/javascript" src="scripts/app/modules/controleAcesso/controleAcesso.controller.js"></script>
     <script type="text/javascript" src="scripts/app/modules/dataTable/dataTable.controller.js"></script>
@@ -103,6 +107,7 @@
     <script type="text/javascript" src="scripts/app/modules/inputFile/inputFile.controller.js"></script>
     <script type="text/javascript" src="scripts/app/modules/loader/loader.controller.js"></script>
     <script type="text/javascript" src="scripts/app/modules/menu/menu.controller.js"></script>
+    <script type="text/javascript" src="scripts/app/modules/treeView/treeView.controller.js"></script>
 
     <!-- SCRIPTS SERVICES -->
     <script type="text/javascript" src="scripts/app/modules/home/home.service.js"></script>
@@ -112,11 +117,13 @@
     <script type="text/javascript" src="scripts/app/modules/inputFile/inputFile.service.js"></script>
     <script type="text/javascript" src="scripts/app/modules/loader/loader.service.js"></script>
     <script type="text/javascript" src="scripts/app/modules/menu/menu.service.js"></script>
+    <script type="text/javascript" src="scripts/app/modules/treeView/treeView.service.js"></script>
     <script type="text/javascript" src="scripts/app/services/regularExpression.service.js"></script>
     <script type="text/javascript" src="scripts/app/services/funcoesUteis.service.js"></script>
 
     <!-- SCRIPTS FACTORY -->
     <script type="text/javascript" src="scripts/app/factory/shareData.factory.js"></script>
+    <script type="text/javascript" src="scripts/app/factory/page.factory.js"></script>
 
     <!-- SCRIPTS COMPONENTE DE JEAN VIDAL -->
     <script type="text/javascript" src="scripts/deps/jvnComponents/jvnModule.js"></script>
