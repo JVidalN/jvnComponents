@@ -3,14 +3,16 @@
 
     app.controller("TreeViewCtrl", TreeViewCtrl);
 
-    TreeViewCtrl.$inject = ['$scope', '$timeout', 'treeViewAPI'];
+    TreeViewCtrl.$inject = ['$scope', '$timeout', 'treeViewAPI', 'funcoesUteisAPI', '$filter'];
 
-    function TreeViewCtrl($scope, $timeout, treeViewAPI) {
+    function TreeViewCtrl($scope, $timeout, treeViewAPI, funcoesUteisAPI, $filter) {
 
         console.log("Entrei no TreeViewCtrl!");
 
         var vm = this;
 
+        vm.editMode = false;
+        vm.createMode = false;
         vm.dataList = [
             {
                 id: 1,
@@ -104,6 +106,64 @@
 
             return objFinal;
         }
+
+
+        vm.editNodo = function (nodo){
+            vm.editNodo.newNodo = angular.copy(nodo);
+            vm.editNodo.oldNodo = angular.copy(nodo);
+        };
+
+        vm.saveEdit = function (nodo){            
+            var item = arrayObjectIndexOfAct(vm.dataList1, nodo.oldNodo);
+
+            console.log(item);
+
+            //if(index > -1){
+                //vm.dataList1[index] = angular.copy(nodo.newNodo);
+            //}
+            clearNodo();
+        };
+
+        vm.deleteNodo = function (nodo){
+            console.log(nodo);
+            funcoesUteisAPI.confirmAction('delete', deleteNodo, null, nodo);
+        };
+
+        function deleteNodoAct(itemFind){
+
+            vm.dataList1[index] = angular.copy(nodo.newNodo);
+            console.log('chegou..',itemFind);
+        }
+
+        function deleteNodo(ev, nodo, action){
+            var index = funcoesUteisAPI.arrayObjectIndexOf(vm.dataList1, nodo);
+            console.log(index);
+            if(index > -1){
+                vm.dataList1.splice(index, 1);
+            }
+        }
+
+        function arrayObjectIndexOfAct(arr, obj){       
+            var find = false;
+
+            for(var i = 0; i < arr.length; i++){
+                if(angular.equals(arr[i], obj)){
+                    return arr[i];
+                }
+                else if(!angular.equals(arr[i], obj) && arr[i].parent.length > 0){
+                    console.log(arr[i]);
+                    return arrayObjectIndexOfAct(arr[i].parent,obj);
+                }
+            };
+
+            return -1;
+        }
+
+        function clearNodo(){
+            vm.editNodo.newNodo = angular.copy();
+            vm.editNodo.oldNodo = angular.copy();
+        }
+
     }
 
 })();

@@ -11,7 +11,7 @@
 
         //INÍCIO DEFININDO TEMAS
 
-        $mdThemingProvider.theme('jvn-2018')
+        $mdThemingProvider.theme('jvn2018')
           .primaryPalette('green-2018', {
               'default': 'A200',
               'hue-1': '800',

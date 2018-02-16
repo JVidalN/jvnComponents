@@ -12,7 +12,7 @@
         var vm = this;
 
         vm.date = new Date();
-        vm.actualTheme = 'jvn-2018';
+        vm.actualTheme = 'jvn2018';
         vm.nomeDoSistema = "JVN Components";
 
         //USO DE SCOPE PARA MANTER O VALOR SEMPRE ATUALIZADO

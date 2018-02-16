@@ -4,20 +4,48 @@
 		var parent = $(".parent");
 		parent.on("click",function(){
 			$(this).parent().find("ul:first").slideToggle();
-		})
+			$(this).toggleClass('toggle');
+		});
+		parent.click();
 	});
 </script>
 <div layout="column" layout-align="center center">
-	</br>
-    <script type="text/ng-template" id="nodoTree">
-        <span ng-class="nodo.parent.length > 0?'parent':'not-parent'">{{ nodo.descricao }}</span>
-        <ul ng-if="nodo.parent.length > 0">
-            <li ng-repeat="nodo in nodo.parent" ng-include="'nodoTree'"></li>
-        </ul>
-    </script>
-    <div class="jvn-treeview">
-	    <ul>
-	        <li ng-repeat="nodo in treeViewCtrl.dataList1" ng-include="'nodoTree'"></li>
-	    </ul>
+	<div layout="row" layout-align="center center">
+		<md-button class="md-raised md-warn" ng-click="treeViewCtrl.editMode=!treeViewCtrl.editMode">{{treeViewCtrl.editMode==false?'Ativar':'Inativar'}} Modo Edição</md-button>
+		<md-button class="md-raised md-warn" ng-click="treeViewCtrl.createMode=!treeViewCtrl.createMode">{{treeViewCtrl.createMode==false?'Ativar':'Inativar'}} Modo Criação</md-button>
+	</div>
+	<div style="padding-left: 10px; width:350px; height: 350px;">
+		<div ng-show="treeViewCtrl.editMode || treeViewCtrl.createMode" layout="row" layout-align="center center">
+	      	<div layout="column">
+	      		<div layout="row" ng-show="treeViewCtrl.createMode">
+					<md-input-container class="md-block" flex>
+				        <input placeholder="Descrição" ng-model="treeViewCtrl.newItem" />
+			      	</md-input-container>
+					<md-button class="md-raised" ng-click="addItem()">Add</md-button>
+				</div>
+	      		<div layout="row" ng-show="treeViewCtrl.editMode">
+					<md-input-container class="md-block" flex>
+				        <input placeholder="Descrição" ng-model="treeViewCtrl.editNodo.newNodo.descricao" />
+			      	</md-input-container>
+					<md-button class="md-raised" ng-disabled="!treeViewCtrl.editNodo.oldNodo" ng-click="treeViewCtrl.saveEdit(treeViewCtrl.editNodo)">Edit</md-button>
+				</div>
+			</div>
+		</div>
+		<md-divider ></md-divider>
+	    <div layout="row" layout-align="center center" class="jvn-treeview" style="overflow: auto;">
+		    <ul>
+		        <li ng-repeat="nodo in treeViewCtrl.dataList1" ng-include="'nodoTree'"></li>
+		    </ul>
+	    </div>
     </div>
 </div>
+<script type="text/ng-template" id="nodoTree">
+    <span ng-class="nodo.parent.length > 0?'parent':'not-parent'">{{ nodo.descricao }}</span>
+    <div ng-show="treeViewCtrl.editMode" class="actions">
+    	<md-icon class="not-selectable iconBtn" ng-click="treeViewCtrl.editNodo(nodo)">edit</md-icon>
+    	<md-icon class="not-selectable iconBtn" ng-click="treeViewCtrl.deleteNodo(nodo)">delete_forever</md-icon>
+    </div>
+    <ul ng-if="nodo.parent.length > 0">
+        <li ng-repeat="nodo in nodo.parent" ng-include="'nodoTree'"></li>
+    </ul>
+</script>

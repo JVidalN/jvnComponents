@@ -1,18 +1,41 @@
 
 .not-parent:before{
+    font-family: 'Material Icons';
+    content: '';
+    text-align:center;
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    margin-right: 1px;
 }
-
+.parent{  
+    cursor:pointer;
+}
 .parent:before{
     font-family: 'Material Icons';
-    content: '\e315';
-	text-align:center;
-	cursor:pointer;
-  	display: inline-block;
-  	vertical-align: text-bottom;
-  	font-size: 15px;
-  	width: 20px;
-  	height: 20px;
-  	margin-right: 1px;
+    content: '\e313';/*e5c8*/
+    text-align:center;
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    margin-right: 1px;
+}
+
+.toggle:before{
+    font-family: 'Material Icons';
+    content: '\e315';/*e5db*/
+    text-align:center;
+    cursor:pointer;
+    display: inline-block;
+    vertical-align: text-bottom;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    margin-right: 1px;
 }
 
 * {
@@ -65,4 +88,20 @@ ul li.jvn-treeview:after {
 }
 ul li:last-child:after {
   	display: none;
+}
+
+.iconBtn{
+    font-size: 18px !important;
+    height: 18px !important;
+    cursor:pointer;
+    outline: none;
+    border: 0;
+}
+
+.iconBtn:hover{
+    color: silver;
+}
+
+div.actions { 
+    display: inline;
 }
