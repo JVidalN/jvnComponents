@@ -12,13 +12,13 @@
         //INÍCIO DEFININDO TEMAS
 
         $mdThemingProvider.theme('jvn-2018')
-          .primaryPalette('blue-2018', {
+          .primaryPalette('green-2018', {
               'default': 'A200',
               'hue-1': '800',
               'hue-2': 'A400',
               'hue-3': 'A700'
           })
-          .accentPalette('green-2018', {
+          .accentPalette('blue-2018', {
               'default': 'A200',
               'hue-1': '800',
               'hue-2': 'A400',
