@@ -44,7 +44,7 @@ The basic structure of the project was organized as follows:
 ```
 
 ### [content/][contentPath]
-	
+
 	Contains all general images and css contents that is used in the app.
 
 ### [content/images][imagesPath]
@@ -143,23 +143,23 @@ This project is licensed under the MIT License - see the [LICENSE.md][licenseMIT
 	Directive based on/inspired by this [Sidenav Menu][sidenavMenu].
 
 
-[readmePortuguese]: https://github.com/LegolasDBA/jvnComponents/blob/master/README-ptBR.md
-[myGit]: https://github.com/LegolasDBA
-[contentPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/content
-[imagesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/content/images
-[materialDesignIconsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/content/material-design-icons
-[scriptsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts
-[appPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app
-[configPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/config
-[directivesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/directives
-[factoryPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/factory
-[filtersPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/filters
-[interceptorsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/interceptors
-[modulesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/modules
-[servicesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/services
-[depsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/deps
-[AppDemo]: https://rawgit.com/LegolasDBA/jvnComponents/master/index.html
-[licenseMIT]: https://github.com/LegolasDBA/jvnComponents/blob/master/LICENSE.md
+[readmePortuguese]: https://github.com/JVidalN/jvnComponents/blob/master/README-ptBR.md
+[myGit]: https://github.com/JVidalN
+[contentPath]: https://github.com/JVidalN/jvnComponents/tree/master/content
+[imagesPath]: https://github.com/JVidalN/jvnComponents/tree/master/content/images
+[materialDesignIconsPath]: https://github.com/JVidalN/jvnComponents/tree/master/content/material-design-icons
+[scriptsPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts
+[appPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app
+[configPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/config
+[directivesPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/directives
+[factoryPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/factory
+[filtersPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/filters
+[interceptorsPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/interceptors
+[modulesPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/modules
+[servicesPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/services
+[depsPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/deps
+[AppDemo]: https://jvidaln.github.io/jvnComponents/
+[licenseMIT]: https://github.com/JVidalN/jvnComponents/blob/master/LICENSE.md
 [AccessControlDirective]: http://gabrielfeitosa.com/angularjs-diretiva-para-controle-de-acesso/
 [ResponsiveDataTable]: https://github.com/paghdalyogesh/responsive-md-data-table
 [ExportData]: http://jsfiddle.net/TheSharpieOne/XNVj3/1/

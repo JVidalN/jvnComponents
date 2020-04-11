@@ -6,7 +6,7 @@
 
 Projeto pessoal de criação de diretivas com AngularJS utilizando o Angular Material e Material Icons, para facilitar o desenvolvimento de apps.
 
-Alguns desses componentes foram criados baseados em componentes já existentes, porém, foram incluídos controles e funcionalidades que achei pertinente para facilitar o uso, além de utilizar o Angular Material e Material Icons. 
+Alguns desses componentes foram criados baseados em componentes já existentes, porém, foram incluídos controles e funcionalidades que achei pertinente para facilitar o uso, além de utilizar o Angular Material e Material Icons.
 
 Todas as referências estão descritas em [Reconhecimento](#reconhecimento).
 
@@ -143,23 +143,23 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE.md][l
 	Diretiva criada com base/inspiração nesse [Sidenav Menu][sidenavMenu].
 
 
-[readmeEnglish]: https://github.com/LegolasDBA/jvnComponents/blob/master/README.md
-[myGit]: https://github.com/LegolasDBA
-[contentPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/content
-[imagesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/content/images
-[materialDesignIconsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/content/material-design-icons
-[scriptsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts
-[appPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app
-[configPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/config
-[directivesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/directives
-[factoryPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/factory
-[filtersPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/filters
-[interceptorsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/interceptors
-[modulesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/modules
-[servicesPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/app/services
-[depsPath]: https://github.com/LegolasDBA/jvnComponents/tree/master/scripts/deps
-[AppDemo]: https://rawgit.com/LegolasDBA/jvnComponents/master/index.html
-[licenseMIT]: https://github.com/LegolasDBA/jvnComponents/blob/master/LICENSE.md
+[readmeEnglish]: https://github.com/JVidalN/jvnComponents/blob/master/README.md
+[myGit]: https://github.com/JVidalN
+[contentPath]: https://github.com/JVidalN/jvnComponents/tree/master/content
+[imagesPath]: https://github.com/JVidalN/jvnComponents/tree/master/content/images
+[materialDesignIconsPath]: https://github.com/JVidalN/jvnComponents/tree/master/content/material-design-icons
+[scriptsPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts
+[appPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app
+[configPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/config
+[directivesPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/directives
+[factoryPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/factory
+[filtersPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/filters
+[interceptorsPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/interceptors
+[modulesPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/modules
+[servicesPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/app/services
+[depsPath]: https://github.com/JVidalN/jvnComponents/tree/master/scripts/deps
+[AppDemo]: https://jvidaln.github.io/jvnComponents/
+[licenseMIT]: https://github.com/JVidalN/jvnComponents/blob/master/LICENSE.md
 [AccessControlDirective]: http://gabrielfeitosa.com/angularjs-diretiva-para-controle-de-acesso/
 [ResponsiveDataTable]: https://github.com/paghdalyogesh/responsive-md-data-table
 [ExportData]: http://jsfiddle.net/TheSharpieOne/XNVj3/1/
