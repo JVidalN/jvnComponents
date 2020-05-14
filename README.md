@@ -18,6 +18,17 @@ To test the components I currently use Node.js, where it is used to store the da
 
 Also, I used windows IIS and call localhost in the browser to start the app.
 
+## Components
+
+> **jvnLoader**
+
+![](https://media.giphy.com/media/W2v2BGI9TnD1FTwRvX/giphy.gif)
+
+>**jvnMenu**
+
+![](https://media0.giphy.com/media/SU8gPNfgL2KF2VB8PD/giphy.gif)
+
+
 ## Project Structure
 
 The basic structure of the project was organized as follows:
