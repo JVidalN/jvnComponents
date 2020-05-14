@@ -18,6 +18,16 @@ Para testar os componentes atualmente utilizo o Node.js, onde o mesmo é utiliza
 
 Além disso, para este projeto utilizei o IIS do windows, e chamo o localhost no browser para iniciar o app.
 
+## Componentes
+
+> **jvnLoader**
+
+![](https://media.giphy.com/media/W2v2BGI9TnD1FTwRvX/giphy.gif)
+
+>**jvnMenu**
+
+![](https://media0.giphy.com/media/SU8gPNfgL2KF2VB8PD/giphy.gif)
+
 ## Estrutura do Projeto
 
 A estrutura básica do projeto foi organizada da seguinte forma:
