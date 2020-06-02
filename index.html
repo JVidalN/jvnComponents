@@ -1,149 +1,207 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br" ng-app="jvnApp" ng-controller="IndexCtrl as indexCtrl">
-    <head>
-    
-        <base href="/jvnComponents/">
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
-        <meta name="theme-color" content="#009933">
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"
+    />
+    <meta name="theme-color" content="#009933" />
 
-        <link rel="stylesheet" type="text/css" href="scripts/app/modules/index/index.css">
-        <link href="content/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="scripts/app/modules/index/index.css" />
+    <link href="content/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-        <title ng-bind="page.title()">JVN Components</title>
+    <title ng-bind="page.title()">JVN Components</title>
+  </head>
+  <body md-theme="indexCtrl.actualTheme" md-theme-watch="true" class="fontResponsive" ng-cloak>
+    <div jvn-controle-acesso="indexCtrl.SourceAccessControl" layout="column" layout-fill>
+      <header class="md-headline">
+        <md-toolbar md-scroll-shrink class="altura-toolbar">
+          <div
+            class="md-toolbar-tools fontResponsive not-selectable"
+            layout="row"
+            layout-align="space-between center"
+          >
+            <!-- <div hide-gt-md> -->
+            <div>
+              <md-button class="md-icon-button" aria-label="Menu">
+                <md-icon ng-click="indexCtrl.toggleLeft()">menu</md-icon>
+              </md-button>
+            </div>
+            <div>
+              <h3 class="md-toolbar-tools">{{indexCtrl.nomeDoSistema}}</h3>
+            </div>
+            <div>
+              <relogio></relogio>
+            </div>
+          </div>
+        </md-toolbar>
+      </header>
+      <main flex class="md-sidenav-left md-body-1">
+        <!-- <md-sidenav md-component-id="left" md-whiteframe="4" md-is-locked-open="$mdMedia('gt-md')"> -->
+        <md-sidenav class="sidenav-width" md-component-id="left" md-whiteframe="4">
+          <div class="sidenav-config" layout="column">
+            <jvn-menu jvn-menu-data="indexCtrl.dataMenu"></jvn-menu>
+          </div>
+        </md-sidenav>
+        <jvn-loader></jvn-loader>
+        <div ui-view="" ng-hide="loading"></div>
+      </main>
+      <footer class="md-headline">
+        <md-toolbar
+          layout="row"
+          layout-align="space-around center"
+          class="altura-toolbar fontResponsive not-selectable"
+        >
+          <div>
+            <img ng-src="{{'content/images/jvnLogoTemp.png'}}" width="120" alt="JVN Logo" />
+          </div>
+          <div>
+            <span>&copy;{{indexCtrl.date | date:'yyyy'}} - {{indexCtrl.nomeDoSistema}}</span>
+          </div>
+        </md-toolbar>
+      </footer>
+    </div>
+  </body>
 
-    </head>
-    <body md-theme="indexCtrl.actualTheme" md-theme-watch="true" class="fontResponsive" ng-cloak>
-        <div jvn-controle-acesso="indexCtrl.SourceAccessControl" layout="column" layout-fill>
-            <header class="md-headline">
-                <md-toolbar md-scroll-shrink class="altura-toolbar">
-                    <div class="md-toolbar-tools fontResponsive not-selectable" layout="row" layout-align="space-between center">
-                        <!-- <div hide-gt-md> -->
-                        <div>
-                            <md-button class="md-icon-button" aria-label="Menu">
-                                <md-icon ng-click="indexCtrl.toggleLeft()">menu</md-icon>
-                            </md-button>
-                        </div>
-                        <div>
-                            <h3 class="md-toolbar-tools" >{{indexCtrl.nomeDoSistema}}</h3>
-                        </div>
-                        <div>
-                            <relogio></relogio>
-                        </div>
-                    </div>
-                </md-toolbar>
-            </header>
-            <main flex class="md-sidenav-left md-body-1">
-                <!-- <md-sidenav md-component-id="left" md-whiteframe="4" md-is-locked-open="$mdMedia('gt-md')"> -->
-                    <md-sidenav class="sidenav-width" md-component-id="left" md-whiteframe="4">
-                        <div class="sidenav-config" layout="column">
-                            <jvn-menu jvn-menu-data="indexCtrl.dataMenu"></jvn-menu>
-                        </div>
-                    </md-sidenav>
-                <jvn-loader></jvn-loader>
-                <div ui-view="" ng-hide="loading"></div>
-            </main>
-            <footer class="md-headline">
-                <md-toolbar layout="row" layout-align="space-around center" class="altura-toolbar fontResponsive not-selectable">
-                    <div>
-                        <img ng-src="{{'content/images/jvnLogoTemp.png'}}" width="120" alt="JVN Logo"/>
-                    </div>
-                    <div >
-                        <span>&copy;{{indexCtrl.date | date:'yyyy'}} - {{indexCtrl.nomeDoSistema}}</span>
-                    </div>
-                </md-toolbar>
-            </footer>
-        </div>
-    </body>    
+  <!-- SCRIPTS JQUERY -->
+  <script type="text/javascript" src="scripts/deps/JQuery/3.2.1/jquery.min.js"></script>
 
-    <!-- SCRIPTS JQUERY -->
-    <script type="text/javascript" src="scripts/deps/JQuery/3.2.1/jquery.min.js"></script>
+  <!-- SCRIPTS ANGULAR -->
+  <script type="text/javascript" src="scripts/deps/angular/1.6.5/angular.min.js"></script>
+  <script type="text/javascript" src="scripts/deps/angular/1.6.5/angular-animate.min.js"></script>
+  <script type="text/javascript" src="scripts/deps/angular/1.6.5/angular-aria.min.js"></script>
+  <script type="text/javascript" src="scripts/deps/angular/1.6.5/angular-messages.min.js"></script>
+  <script type="text/javascript" src="scripts/deps/angular/1.6.5/angular-locale_pt-br.js"></script>
+  <script type="text/javascript" src="scripts/deps/angular/0.5.17/angular-filter.min.js"></script>
 
-    <!-- SCRIPTS ANGULAR -->
-    <script type="text/javascript" src="scripts/deps/angular/1.6.5/angular.min.js"></script>
-    <script type="text/javascript" src="scripts/deps/angular/1.6.5/angular-animate.min.js"></script>
-    <script type="text/javascript" src="scripts/deps/angular/1.6.5/angular-aria.min.js"></script>
-    <script type="text/javascript" src="scripts/deps/angular/1.6.5/angular-messages.min.js"></script>
-    <script type="text/javascript" src="scripts/deps/angular/1.6.5/angular-locale_pt-br.js"></script>
-    <script type="text/javascript" src="scripts/deps/angular/0.5.17/angular-filter.min.js"></script>
+  <!-- SCRIPTS ANGULAR-UI -->
+  <script
+    type="text/javascript"
+    src="scripts/deps/angular-ui-router/1.0.3/angular-ui-router.min.js"
+  ></script>
 
-    <!-- SCRIPTS ANGULAR-UI -->
-    <script type="text/javascript" src="scripts/deps/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+  <!-- SCRIPTS ANGULAR MATERIAL-->
+  <script
+    type="text/javascript"
+    src="scripts/deps/angular-material/1.1.7/angular-material.min.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="scripts/deps/angular-material/1.1.7/angular-material.min.css"
+  />
+  <script
+    type="text/javascript"
+    src="scripts/deps/angular-material-icons/0.7.1/angular-material-icons.min.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="content/material-design-icons/3.0.1/iconfont/material-icons.css"
+  />
 
-    <!-- SCRIPTS ANGULAR MATERIAL-->
-    <script type="text/javascript" src="scripts/deps/angular-material/1.1.7/angular-material.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="scripts/deps/angular-material/1.1.7/angular-material.min.css">
-    <script type="text/javascript" src="scripts/deps/angular-material-icons/0.7.1/angular-material-icons.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="content/material-design-icons/3.0.1/iconfont/material-icons.css">
+  <!-- SCRIPTS CONFIGURAÇÕES-->
+  <script type="text/javascript" src="scripts/app/config/app.module.js"></script>
+  <script type="text/javascript" src="scripts/app/config/app.route.js"></script>
+  <script type="text/javascript" src="scripts/app/config/app.interceptors.js"></script>
+  <script type="text/javascript" src="scripts/app/config/app.theme.js"></script>
+  <script type="text/javascript" src="scripts/app/config/app.moment.js"></script>
+  <script type="text/javascript" src="scripts/app/config/app.html5Mode.js"></script>
+  <script type="text/javascript" src="scripts/app/config/app.value.js"></script>
 
-    <!-- SCRIPTS CONFIGURAÇÕES-->    
-    <script type="text/javascript" src="scripts/app/config/app.module.js"></script>
-    <script type="text/javascript" src="scripts/app/config/app.route.js"></script>
-    <script type="text/javascript" src="scripts/app/config/app.interceptors.js"></script>
-    <script type="text/javascript" src="scripts/app/config/app.theme.js"></script>
-    <script type="text/javascript" src="scripts/app/config/app.moment.js"></script>
-    <script type="text/javascript" src="scripts/app/config/app.html5Mode.js"></script>
-    <script type="text/javascript" src="scripts/app/config/app.value.js"></script>
+  <!-- SCRIPTS INTERCEPTORS-->
+  <script
+    type="text/javascript"
+    src="scripts/app/interceptors/authHttpResponse.interceptor.js"
+  ></script>
+  <script type="text/javascript" src="scripts/app/interceptors/loading.interceptor.js"></script>
+  <script type="text/javascript" src="scripts/app/interceptors/timeStamp.interceptor.js"></script>
+  <script type="text/javascript" src="scripts/app/interceptors/error.interceptor.js"></script>
 
+  <!-- SCRIPTS FILTERS-->
+  <script type="text/javascript" src="scripts/app/filters/formatarData.filter.js"></script>
+  <script type="text/javascript" src="scripts/app/filters/padLeft.filter.js"></script>
+  <script type="text/javascript" src="scripts/app/filters/parseJsonDate.filter.js"></script>
 
-    <!-- SCRIPTS INTERCEPTORS-->
-    <script type="text/javascript" src="scripts/app/interceptors/authHttpResponse.interceptor.js"></script>
-    <script type="text/javascript" src="scripts/app/interceptors/loading.interceptor.js"></script>
-    <script type="text/javascript" src="scripts/app/interceptors/timeStamp.interceptor.js"></script>
-    <script type="text/javascript" src="scripts/app/interceptors/error.interceptor.js"></script>
+  <!-- SCRIPTS CONTROLLERS -->
+  <script type="text/javascript" src="scripts/app/modules/index/index.controller.js"></script>
+  <script type="text/javascript" src="scripts/app/modules/home/home.controller.js"></script>
+  <script
+    type="text/javascript"
+    src="scripts/app/modules/controleAcesso/controleAcesso.controller.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="scripts/app/modules/dataTable/dataTable.controller.js"
+  ></script>
+  <script type="text/javascript" src="scripts/app/modules/dualList/dualList.controller.js"></script>
+  <script
+    type="text/javascript"
+    src="scripts/app/modules/inputFile/inputFile.controller.js"
+  ></script>
+  <script type="text/javascript" src="scripts/app/modules/loader/loader.controller.js"></script>
+  <script type="text/javascript" src="scripts/app/modules/menu/menu.controller.js"></script>
+  <script type="text/javascript" src="scripts/app/modules/treeView/treeView.controller.js"></script>
 
-    <!-- SCRIPTS FILTERS-->
-    <script type="text/javascript" src="scripts/app/filters/formatarData.filter.js"></script>
-    <script type="text/javascript" src="scripts/app/filters/padLeft.filter.js"></script>
-    <script type="text/javascript" src="scripts/app/filters/parseJsonDate.filter.js"></script>
+  <!-- SCRIPTS SERVICES -->
+  <script type="text/javascript" src="scripts/app/modules/home/home.service.js"></script>
+  <script
+    type="text/javascript"
+    src="scripts/app/modules/controleAcesso/controleAcesso.service.js"
+  ></script>
+  <script type="text/javascript" src="scripts/app/modules/dataTable/dataTable.service.js"></script>
+  <script type="text/javascript" src="scripts/app/modules/dualList/dualList.service.js"></script>
+  <script type="text/javascript" src="scripts/app/modules/inputFile/inputFile.service.js"></script>
+  <script type="text/javascript" src="scripts/app/modules/loader/loader.service.js"></script>
+  <script type="text/javascript" src="scripts/app/modules/menu/menu.service.js"></script>
+  <script type="text/javascript" src="scripts/app/modules/treeView/treeView.service.js"></script>
+  <script type="text/javascript" src="scripts/app/services/regularExpression.service.js"></script>
+  <script type="text/javascript" src="scripts/app/services/funcoesUteis.service.js"></script>
 
-    <!-- SCRIPTS CONTROLLERS -->
-    <script type="text/javascript" src="scripts/app/modules/index/index.controller.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/home/home.controller.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/controleAcesso/controleAcesso.controller.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/dataTable/dataTable.controller.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/dualList/dualList.controller.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/inputFile/inputFile.controller.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/loader/loader.controller.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/menu/menu.controller.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/treeView/treeView.controller.js"></script>
+  <!-- SCRIPTS FACTORY -->
+  <script type="text/javascript" src="scripts/app/factory/shareData.factory.js"></script>
+  <script type="text/javascript" src="scripts/app/factory/page.factory.js"></script>
 
-    <!-- SCRIPTS SERVICES -->
-    <script type="text/javascript" src="scripts/app/modules/home/home.service.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/controleAcesso/controleAcesso.service.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/dataTable/dataTable.service.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/dualList/dualList.service.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/inputFile/inputFile.service.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/loader/loader.service.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/menu/menu.service.js"></script>
-    <script type="text/javascript" src="scripts/app/modules/treeView/treeView.service.js"></script>
-    <script type="text/javascript" src="scripts/app/services/regularExpression.service.js"></script>
-    <script type="text/javascript" src="scripts/app/services/funcoesUteis.service.js"></script>
+  <!-- SCRIPTS COMPONENTE DE JEAN VIDAL -->
+  <script type="text/javascript" src="scripts/deps/jvnComponents/jvnModule.js"></script>
+  <script type="text/javascript" src="scripts/deps/jvnComponents/jvnMenu.js"></script>
+  <link rel="stylesheet" href="scripts/deps/jvnComponents/references/jvn-menu/css/jvn-menu.css" />
+  <script type="text/javascript" src="scripts/deps/jvnComponents/jvnControleAcesso.js"></script>
+  <script type="text/javascript" src="scripts/deps/jvnComponents/jvnLoader.js"></script>
+  <script type="text/javascript" src="scripts/deps/jvnComponents/jvnDualList.js"></script>
+  <link
+    rel="stylesheet"
+    href="scripts/deps/jvnComponents/references/jvnDualList/css/jvnDualList.css"
+  />
+  <script type="text/javascript" src="scripts/deps/jvnComponents/jvnDataTable.js"></script>
+  <script
+    type="text/javascript"
+    src="scripts/deps/jvnComponents/references/md-data-table/js/md-data-table.js"
+  ></script>
+  <link
+    rel="stylesheet"
+    href="scripts/deps/jvnComponents/references/md-data-table/css/md-data-table.css"
+  />
+  <script
+    type="text/javascript"
+    src="scripts/deps/jvnComponents/references/file-saver/js/1.3.2/FileSaver.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="scripts/deps/jvnComponents/references/pdfMake/0.1.32/pdfmake.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="scripts/deps/jvnComponents/references/html2canvas/0.4.1/html2canvas.min.js"
+  ></script>
 
-    <!-- SCRIPTS FACTORY -->
-    <script type="text/javascript" src="scripts/app/factory/shareData.factory.js"></script>
-    <script type="text/javascript" src="scripts/app/factory/page.factory.js"></script>
-
-    <!-- SCRIPTS COMPONENTE DE JEAN VIDAL -->
-    <script type="text/javascript" src="scripts/deps/jvnComponents/jvnModule.js"></script>
-    <script type="text/javascript" src="scripts/deps/jvnComponents/jvnMenu.js"></script>
-        <link rel="stylesheet" href="scripts/deps/jvnComponents/references/jvn-menu/css/jvn-menu.css">
-    <script type="text/javascript" src="scripts/deps/jvnComponents/jvnControleAcesso.js"></script>
-    <script type="text/javascript" src="scripts/deps/jvnComponents/jvnLoader.js"></script>
-    <script type="text/javascript" src="scripts/deps/jvnComponents/jvnDualList.js"></script>
-        <link rel="stylesheet" href="scripts/deps/jvnComponents/references/jvnDualList/css/jvnDualList.css">
-    <script type="text/javascript" src="scripts/deps/jvnComponents/jvnDataTable.js"></script>
-        <script type="text/javascript" src="scripts/deps/jvnComponents/references/md-data-table/js/md-data-table.js"></script>
-        <link rel="stylesheet" href="scripts/deps/jvnComponents/references/md-data-table/css/md-data-table.css">
-        <script type="text/javascript" src="scripts/deps/jvnComponents/references/file-saver/js/1.3.2/FileSaver.js"></script>
-        <script type="text/javascript" src="scripts/deps/jvnComponents/references/pdfMake/0.1.32/pdfmake.min.js"></script>
-        <script type="text/javascript" src="scripts/deps/jvnComponents/references/html2canvas/0.4.1/html2canvas.min.js"></script>
-
-    <!-- OUTROS SCRIPTS -->
-    <!-- DIRETIVAS -->
-    <script type="text/javascript" src="scripts/app/directives/relogio.directive.js"></script>
-    <!-- Parse, validate, manipulate, and display dates and times in JavaScript. <https://momentjs.com>-->
-    <script type="text/javascript" src="scripts/deps/moment/2.18.1/moment.min.js"></script>
-    <script type="text/javascript" src="scripts/deps/moment/2.18.1/moment-with-locales.js"></script>
+  <!-- OUTROS SCRIPTS -->
+  <!-- DIRETIVAS -->
+  <script type="text/javascript" src="scripts/app/directives/relogio.directive.js"></script>
+  <!-- Parse, validate, manipulate, and display dates and times in JavaScript. <https://momentjs.com>-->
+  <script type="text/javascript" src="scripts/deps/moment/2.18.1/moment.min.js"></script>
+  <script type="text/javascript" src="scripts/deps/moment/2.18.1/moment-with-locales.js"></script>
 </html>

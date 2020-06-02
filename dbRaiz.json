@@ -1,0 +1,207 @@
+{
+  "controleAcesso": {
+      "id": 1,
+      "usuario": "jvn",
+      "permissoes": [
+        {
+          "permisssaoId": "btn1",
+          "permissaoAcesso": 1
+        },
+        {
+          "permisssaoId": "btn2",
+          "permissaoAcesso": 2
+        },
+        {
+          "permisssaoId": "link1",
+          "permissaoAcesso": 1
+        },
+        {
+          "permisssaoId": "link2",
+          "permissaoAcesso": 2
+        }
+      ]
+  },
+  "dataTable":[
+    {
+      "id": 1,
+      "text": "Text Sample 1",
+      "number": 0.01,
+      "numeric": 0.01,
+      "percent": 0.01,
+      "currency": 0.01,
+      "column_editable": "Column Editable 1",
+      "column_not_sortable": "Column Not Sortable 1",
+      "column_action": "View, Edit, Delete",
+      "view": true,
+      "edit": true,
+      "delete": true
+    }, 
+    {
+      "id": 2,
+      "text": "Text Sample 2",
+      "number": 0.22,
+      "numeric": 0.22,
+      "percent": 0.22,
+      "currency": 0.22,
+      "column_editable": "Column Editable 2",
+      "column_not_sortable": "Column Not Sortable 2",
+      "column_action": "None",
+      "view": false,
+      "edit": false,
+      "delete": false
+    }, 
+    {
+      "id": 3,
+      "text": "Text Sample 3",
+      "number": 3.33,
+      "numeric": 3.33,
+      "percent": 3.33,
+      "currency": 3.33,
+      "column_editable": "Column Editable 3",
+      "column_not_sortable": "Column Not Sortable 3",
+      "column_action": "View, Delete",
+      "view": true,
+      "edit": false,
+      "delete": true
+    }, 
+    {
+      "id": 4,
+      "text": "Text Sample 4",
+      "number": 44.44,
+      "numeric": 44.44,
+      "percent": 44.44,
+      "currency": 44.44,
+      "column_editable": "Column Editable 4",
+      "column_not_sortable": "Column Not Sortable 4",
+      "column_action": "View, Edit",
+      "view": true,
+      "edit": true,
+      "delete": false
+    }, 
+    {
+      "id": 5,
+      "text": "Text Sample 5",
+      "number": 555.55,
+      "numeric": 555.55,
+      "percent": 555.55,
+      "currency": 555.55,
+      "column_editable": "Column Editable 5",
+      "column_not_sortable": "Column Not Sortable 5",
+      "column_action": "Edit, Delete",
+      "view": false,
+      "edit": true,
+      "delete": true  
+    }, 
+    {
+      "id": 6,
+      "text": "Text Sample 6",
+      "number": 6666.66,
+      "numeric": 6666.66,
+      "percent": 6666.66,
+      "currency": 6.666666,
+      "column_editable": "Column Editable 6",
+      "column_not_sortable": "Column Not Sortable 6",
+      "column_action": "View",
+      "view": true,
+      "edit": false,
+      "delete": false  
+    }, 
+    {
+      "id": 7,
+      "text": "Text Sample 7",
+      "number": 77777.77,
+      "numeric": 77777.77,
+      "percent": 77777.77,
+      "currency": 77777.77,
+      "column_editable": "Column Editable 7",
+      "column_not_sortable": "Column Not Sortable 7",
+      "column_action": "Edit",
+      "view": false,
+      "edit": true,
+      "delete": false  
+    }, 
+    {
+      "id": 8,
+      "text": "Text Sample 8",
+      "number": 888888.88,
+      "numeric": 888888.88,
+      "percent": 888888.88,
+      "currency": 888888.88,
+      "column_editable": "Column Editable 8",
+      "column_not_sortable": "Column Not Sortable 8",
+      "column_action": "Delete",
+      "view": false,
+      "edit": false,
+      "delete": true  
+    }
+  ],
+  "dualList":[
+    {
+      "dataLeft": [
+          {
+              "id": 1,
+              "descricao": "ADMINISTRADOR"
+          },            
+          {
+              "id": 2,
+              "descricao": "ANALISTA JUNIOR"
+          },            
+          {
+              "id": 3,
+              "descricao": "ANALISTA SENIOR"
+          }
+          ,            
+          {
+              "id": 4,
+              "descricao": "ANALISTA PLENO"
+          },            
+          {
+              "id": 5,
+              "descricao": "ASSISTENTE I"
+          },            
+          {
+              "id": 6,
+              "descricao": "ASSISTENTE II"
+          },            
+          {
+              "id": 7,
+              "descricao": "ASSISTENTE III"
+          },            
+          {
+              "id": 8,
+              "descricao": "ESTAGIÁRIO"
+          },            
+          {
+              "id": 9,
+              "descricao": "TESTER"
+          },            
+          {
+              "id": 10,
+              "descricao": "DESENVOLVEDOR FRONT END"
+          },            
+          {
+              "id": 11,
+              "descricao": "DESENVOLVEDOR BACK END"
+          },            
+          {
+              "id": 12,
+              "descricao": "DESENVOLVEDOR FULL STACK"
+          }
+      ],
+      "dataRight":[
+        {
+            "id": 13,
+            "descricao": "DBA JUNIOR"
+        },            
+        {
+            "id": 14,
+            "descricao": "DBA SENIOR"
+        },            
+        {
+            "id": 15,
+            "descricao": "DBA PLENO"
+        }
+      ]
+    }
+  ]
+}

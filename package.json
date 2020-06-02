@@ -2,21 +2,21 @@
   "name": "jvnComponents",
   "version": "1.0.0",
   "description": "Aplicação criada para demonstrar os componentes deste projeto. Acesse meu repositório para mais detalhes.",
-  "dependencies" : {},
-  "devDependencies" : {},
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author" : {
-    "name" : "Jean Vidal Nunes",
-    "email" : "j.vidalnunes@gmail.com",
-    "url" : "http://github.com/LegolasDBA/"
+  "author": {
+    "name": "Jean Vidal Nunes",
+    "email": "j.vidalnunes@gmail.com",
+    "url": "http://github.com/JVidalN/"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git:ssh://github.com/LegolasDBA/jvnComponents.git"
+    "url": "git:ssh://github.com/JVidalN/jvnComponents.git"
   },
-  "homepage": "https://rawgit.com/LegolasDBA/jvnComponents/master/index.html",
-  "scripts": { }
+  "homepage": "https://rawgit.com/JVidalN/jvnComponents/master/index.html",
+  "scripts": {}
 }
